@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Conv_GOTHAPROBLA_0';
+	src: url('fonts/GOTHAPROBLA_0.eot');
+	src: local('☺'), url('fonts/GOTHAPROBLA_0.woff') format('woff'), url('fonts/GOTHAPROBLA_0.ttf') format('truetype'), url('fonts/GOTHAPROBLA_0.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GOTHAPROLIG_0';
+	src: url('../fonts/GOTHAPROLIG_0.eot');
+	src: local('☺'), url('../fonts/GOTHAPROLIG_0.woff') format('woff'), url('../fonts/GOTHAPROLIG_0.ttf') format('truetype'), url('../fonts/GOTHAPROLIG_0.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GOTHAPROMED_0';
+	src: url('../fonts/GOTHAPROMED_0.eot');
+	src: local('☺'), url('../fonts/GOTHAPROMED_0.woff') format('woff'), url('../fonts/GOTHAPROMED_0.ttf') format('truetype'), url('../fonts/GOTHAPROMED_0.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GOTHAPRONARMED';
+	src: url('../fonts/GOTHAPRONARMED.eot');
+	src: local('☺'), url('../fonts/GOTHAPRONARMED.woff') format('woff'), url('../fonts/GOTHAPRONARMED.ttf') format('truetype'), url('../fonts/GOTHAPRONARMED.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GOTHAPROREG_0';
+	src: url('../fonts/GOTHAPROREG_0.eot');
+	src: local('☺'), url('../fonts/GOTHAPROREG_0.woff') format('woff'), url('../fonts/GOTHAPROREG_0.ttf') format('truetype'), url('../fonts/GOTHAPROREG_0.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

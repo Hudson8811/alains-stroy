@@ -453,7 +453,7 @@
               background-position: 32% center;
             }
             &3{
-              height: 75px;
+              height: 76px;
               width: 51px;
               background-position: 65% center;
             }
@@ -1008,6 +1008,302 @@
       }
       a{
         align-self: flex-end;
+      }
+    }
+  }
+}
+@media screen and (max-width:1240px){
+  .index-page .services {
+    .inner{
+      padding: 0;
+    }
+    .flex {
+    justify-content: space-around;
+    .item{
+      margin-right: 0;
+      width: 280px;
+    }
+  }
+}
+.index-page .about_company .inner{
+  padding: 0;
+}
+.index-page .about_company .flex{
+  display: grid;
+  .item:nth-child(1){
+    order: 0;
+  }
+  .item:nth-child(2){
+    order: 1;
+  }
+  .item:nth-child(3){
+    order: 3;
+  }
+  .item:nth-child(4){
+    order: 2;
+  }
+  .item:nth-child(5){
+    order: 4;
+  }
+  .item:nth-child(6){
+    order: 5;
+  }
+  .item:nth-child(7){
+    order: 7;
+  }
+  .item:nth-child(8){
+    order: 6;
+  }
+}
+.index-page .about_company .flex .item{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+.index-page .about_company .flex .item.image{
+  width: 460px;
+  height: 300px;
+}
+.index-page .description{
+  margin-top: 20px;
+}
+}
+@media screen and (max-width:1020px){
+  .index-page .banner_block-2 .item .left-block{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  .index-page .banner_block-2 .item .right-block a{
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .index-page .questions .flex:nth-child(2){
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    >div{
+      margin-top: 10px;
+    }
+  }
+  .index-page .place-block .inner .flex{
+    .item{
+      width: 25%;
+      .icon{
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .index-page .partners-block .flex{
+    justify-content: center;
+  }
+  .index-page .form-block .inner{
+    padding: 20px 0px;
+  }
+  .index-page .form-block .flex{
+    margin-top: 10px;
+  }
+  .index-page .form-block .flex {
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    a{
+      align-self: center;
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width:880px){
+  .index-page .banner-block .wight-block{
+    width: 100%;
+    &:before{
+      display: none;
+    }
+  }
+  .index-page .questions .flex{
+    flex-direction: column;
+    align-items:center;
+  }
+  .index-page .questions .inner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .index-page .questions .flex .left, .index-page .questions .flex .right{
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .index-page .description .flex{
+    flex-wrap: wrap;
+    .item{
+      margin-top: 10px;
+      width: 300px;
+      span{
+        text-align: center;
+      }
+    }
+  }
+  .index-page .link-block .inner{
+    padding-top: 10px;
+  }
+  .index-page .link-block .name span{
+font-size: 20px;
+line-height: 24px;
+  }
+  .index-page .link-block .flex{
+    margin-top: 0px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .item{
+      width: 200px;
+      margin-top: 10px;
+    }
+  }
+  .index-page .form-block .name span{
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width:680px){
+    .index-page .questions .flex .fon{
+      width: 100%;
+    }
+    .index-page .questions .flex .name{
+      width: 100%;
+    }
+  .index-page .banner-block {
+    padding: 20px 0px;
+    height: auto;
+    .item{
+      margin-bottom: 0px;
+    }
+    .owl-dots{
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+    span.blue{
+      font-size: 18px;
+      line-height: 22px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: 30px;
+      width: auto;
+    }
+    .wight-block{
+    padding: 20px 20px 20px 30px;
+    span.orange{
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    span.litle-blue{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+.index-page .banner_block-2 .item .left-block span:nth-child(1){
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.index-page .banner_block-2 .item .left-block span:nth-child(2), .index-page .banner_block-2 .item .left-block span:nth-child(3){
+  font-size: 17px;
+  line-height: 20px;
+}
+.index-page .banner_block-2 .item .left-block span:nth-child(4){
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.index-page .place-block .inner .flex{
+  flex-wrap: wrap;
+  .item{
+    width: 50%;
+    margin-top: 10px;
+    .icon{
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+}
+@media screen and (max-width:500px){
+  .index-page .banner_block-2 .item{
+    flex-direction: column;
+  }
+  .index-page .banner_block-2 .item .left-block{
+    margin-bottom: 10px;
+  }
+  .index-page .banner_block-2 .item .right-block {
+    align-self: center;
+    justify-self: center;
+    a{
+      margin-bottom: 10px;
+    }
+  }
+  .index-page .banner_block-2 .owl-dots{
+    display: none;
+  }
+  .index-page .questions .flex .left{
+    span{
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .index-page .about_company .flex .item {
+    .blue{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .orange{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    p{
+      padding-right: 0;
+      font-size: 14px;
+    }
+    &.image{
+      width: 100%;
+    }
+  }
+  .index-page .partners-block{
+    padding-bottom: 10px;
+  }
+  .index-page .partners-block .flex{
+    flex-direction: column;
+    align-items:center;
+    .logo{
+      margin-top: 10px;
+    }
+  }
+  .index-page .link-block .map-block{
+    height: 300px;
+  }
+  .index-page .form-block .flex form div:nth-child(1){
+    width: 100%;
+  }
+  .index-page .form-block .flex form div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px){
+  .index-page .banner-block {
+    .wight-block{
+      min-height: 220px;
+      flex-direction: column;
+      span{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      img{
+        height: 60px;
+        margin-top: 10px;
       }
     }
   }

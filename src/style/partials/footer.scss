@@ -82,3 +82,34 @@
       }
   }
 }
+@media screen and (max-width:880px){
+  .footer{
+    padding: 20px 0px;
+    .main-block{
+      flex-wrap: wrap;
+      >div{
+        width: 50%;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width:500px){
+  .footer{
+    padding: 20px 0px;
+    .main-block{
+      flex-wrap: wrap;
+      >div{
+        width: 100%;
+      }
+    }
+  }
+  .footer .main-block>div:nth-child(2) ul li{
+    margin-bottom: 10px;
+  }
+  .footer .main-block>div:nth-child(3) ul li{
+    margin-bottom: 10px;
+  }
+  .footer .main-block .flex-block a:nth-child(2){margin-top: 10px;margin-bottom: 10px;}
+}

@@ -70,3 +70,30 @@
     }
   }
 }
+@media screen and (max-width:880px){
+.header{
+  .inner2{
+    flex-direction: column;
+    >div{
+      margin: 5px auto;
+    }
+  }
+}
+a.mail{
+  text-align: center;
+}
+.header-menu{
+  padding: 20px 0px;
+  ul{
+    flex-direction: column;
+    .more{
+      &:after{
+        display: none;
+      }
+    }
+    li{
+      margin: 5px 0px;
+    }
+  }
+}
+}

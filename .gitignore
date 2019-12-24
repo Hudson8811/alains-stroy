@@ -1,5 +1,6 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+.gitignore
+/node_modules
+/.idea
+package.json
+package-lock.json
+/.history

@@ -43,7 +43,7 @@
   }
   &-menu{
     background-color:#0E569E;
-    ul{
+    >ul{
       max-width: 985px;
       width: 98%;
       margin: 0 auto;
@@ -51,25 +51,42 @@
       justify-content: space-around;
       padding: 0;
       min-height: 60px;
+      height: 60px;
       align-items: center;
-      a{
-        color: #fff;
-      }
-      .more{
-        position: relative;
-        &:after{
-          content:'';
-          position: absolute;
-          display: block;
-          width: 9px;
-          height: 6px;
-          background-image: url(../img/arow.png);
-          background-position: left center;
-          left: 50%;
-          margin-left: -4.5px;
-          margin-top: 5px;
+      >li{
+        height: 100%;
+        flex-grow: 1;
+        >a{
+          color: #fff;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+        }
+        &:hover,&.active{
+          >a{
+            background: #f60;
+          }
+        }
+        &.more{
+          position: relative;
+          &:after{
+            content:'';
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 6px;
+            background-image: url(../img/arow.png);
+            background-position: left center;
+            left: 50%;
+            margin-left: -4.5px;
+            bottom: 9px;
+          }
         }
       }
+
     }
   }
 }

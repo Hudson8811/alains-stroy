@@ -27,7 +27,7 @@
   .button{
     display: block;
     text-decoration: none;
-    font-family: 'Conv_GOTHAPROBLA_0', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #fff;
@@ -76,7 +76,7 @@
         color: #ff6600;
         display: block;
         font-weight: bold;
-        width: 222px;
+        width: 230px;
         margin-bottom: 24px;
       }
       &.litle-blue{
@@ -220,6 +220,7 @@
         text-transform: uppercase;
         padding-top: 66px;
         padding-bottom: 50px;
+        font-weight: 400;
         margin: 0;
       }
     }
@@ -269,7 +270,8 @@
           border-bottom: 1px solid #DDE7F1;
         }
         ul{
-          padding-left: 18px;
+          padding-left: 16px;
+          letter-spacing: -0.8px;
           li{
             margin-top: 26px;
             position: relative;
@@ -281,7 +283,7 @@
               height: 5px;
               background-color:#ff6600;
               border-radius: 2.5px;
-              left: -17px;
+              left: -15px;
               top: 7px;
             }
             a{
@@ -407,7 +409,6 @@
           background-position: 100% 66.5%;
           .wight{
             padding-right: 10%;
-            padding-top: 29px;
           }
         }
         &:nth-child(7){
@@ -420,6 +421,8 @@
           padding: 17px 20px;
           box-sizing: border-box;
           font-size: 14px;
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -469,108 +472,6 @@
           font-size: 18px;
           color: #0e569e;
           font-weight: bold;
-        }
-      }
-    }
-  }
-  .questions{
-    margin-top: 58px;
-    
-    position: relative;
-    &:before{
-      content:'';
-      width: 40px;
-      height: 21px;
-      background-image: url(../img/arrow4.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 50%;
-      margin-left: -20px;
-      top:-1px;
-    }
-    &:after{
-      content:'';
-      width: 40px;
-      height: 21px;
-      background-image: url(../img/arrow3.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 50%;
-      margin-left: -20px;
-      bottom:-20px;
-      z-index: 10;
-    }
-    .inner{
-      background-color:#0e569e;
-      padding-top: 80px;
-    padding-bottom: 76px;
-    }
-    .flex{
-      
-      &:nth-child(2){
-        justify-content: space-between;
-      }
-      display: flex;
-      .left,.right{
-        width: 50%;
-        margin-bottom: 37px;
-      }
-      .left{
-        span{
-          font-size: 32px;
-          text-decoration: uppercase;
-          color: #fff;
-          display: block;
-          &.orange{
-            color: #ff6600;
-          }
-        }
-      }
-      .right{
-        color: #fff;
-        display: flex;
-        align-items: flex-end;
-      }
-      .fon{
-        width: 39%;
-        height: 40px;
-      }
-      .name{
-        width: 39%;
-        height: 40px;
-      }
-      .button{
-        width: 180px;
-        height: 40px;
-        button{
-          cursor: pointer;
-          border:0px;
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          height: 100%;
-          background-color:#FF6600;
-          &:hover{
-            background-color:#FF9000;
-          }
-          color: #fff;
-          font-weight: bold;
-        }
-      }
-      input{
-        width: 100%;
-        height: 100%;
-        box-sizing:border-box;
-        padding: 0 20px;
-        background-color:#1B67B3;
-        border:none;
-        color: #fff;
-        &:focus{
-          background-color:#4185C9;
         }
       }
     }
@@ -987,6 +888,10 @@
             border:none;
             box-sizing:border-box;
             color: #fff;
+            font-size: 16px;
+            &:focus{
+              background-color:#4185C9;
+            }
           }
           &:nth-child(3){
             height: 115px;
@@ -1011,7 +916,13 @@
       }
     }
   }
+
+  .questions{
+    margin-top: 58px;
+  }
 }
+
+
 @media screen and (max-width:1240px){
   .index-page .services {
     .inner{

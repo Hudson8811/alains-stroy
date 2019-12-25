@@ -6,7 +6,7 @@
     width: 98%;
     margin: 0 auto;
     display: flex;
-    
+    justify-content: space-between;
     .logo-block{
       text-align: center;
       .tel{
@@ -29,9 +29,10 @@
       >div{
         width: 25%;
         &:nth-child(2){
+          width: 15%;
           ul{
             li{
-              margin-bottom: 17px;
+              margin-bottom: 10px;
               &:last-child{
                 margin-bottom: 0;
               }
@@ -39,14 +40,18 @@
           }
         }
         &:nth-child(3){
+          width: 20%;
           ul{
             li{
-              margin-bottom: 24px;
+              margin-bottom: 12px;
               &:last-child{
                 margin-bottom: 0;
               }
             }
           }
+        }
+        &:nth-child(4){
+          width: 22%;
         }
       }
       li{
@@ -88,7 +93,7 @@
     .main-block{
       flex-wrap: wrap;
       >div{
-        width: 50%;
+        width: 50% !important;
         margin-top: 10px;
         text-align: center;
       }
@@ -101,7 +106,7 @@
     .main-block{
       flex-wrap: wrap;
       >div{
-        width: 100%;
+        width: 100% !important;
       }
     }
   }

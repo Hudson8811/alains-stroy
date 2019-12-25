@@ -11,7 +11,7 @@
   .button{
     display: block;
     text-decoration: none;
-    font-family: 'Conv_GOTHAPROBLA_0', sans-serif;
+    font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #fff;
@@ -37,6 +37,9 @@
       &.mail{
         color: #0e569e;
       }
+  }
+  .contacts{
+    line-height: 28px;
   }
   &-menu{
     background-color:#0E569E;

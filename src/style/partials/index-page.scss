@@ -1,54 +1,7 @@
 .index-page{
-.inputbox::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#63a8ec;}
-.inputbox::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#63a8ec;}
-.inputbox:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#63a8ec;}
-.inputbox:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:#63a8ec;}
-.inputbox:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.inputbox:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-  .inner2{
-    max-width: 985px;
-    width: 98%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    min-height: 100px;
-    align-items: center;
-  }
-  .button{
-    display: block;
-    text-decoration: none;
-    font-family: 'Gotham Pro', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    color: #fff;
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #FF6600;
-    &:hover{
-      background-color:#FF9000;
-    }
-  }
   position: relative;
-  .inner{
-    width: 1280px;
-    max-width: 98%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-  }
+
+
   .owl-stage{
     display: flex;
   }

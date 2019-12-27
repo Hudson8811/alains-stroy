@@ -193,28 +193,29 @@
     &__ul {
         padding-left: 14px;
         color: #333333;
+        li {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 4px;
+                left: -14px;
+                display: block;
+                width: 5px;
+                height: 5px;
+                content: '';
+                border-radius: 50%;
+                background: #ff6600;
+
+            }
+
+            &+li {
+                margin-top: 16px;
+            }
+        }
     }
 
-    li {
-        position: relative;
 
-        &::before {
-            position: absolute;
-            top: 4px;
-            left: -14px;
-            display: block;
-            width: 5px;
-            height: 5px;
-            content: '';
-            border-radius: 50%;
-            background: #ff6600;
-
-        }
-
-        &+li {
-            margin-top: 19px;
-        }
-    }
 
     &::after {
         position: absolute;

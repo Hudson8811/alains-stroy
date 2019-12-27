@@ -1,5 +1,5 @@
-.header{
-  .inner2{
+.header {
+  .inner2 {
     max-width: 985px;
     width: 98%;
     margin: 0 auto;
@@ -8,7 +8,8 @@
     min-height: 100px;
     align-items: center;
   }
-  .button{
+
+  .button {
     display: block;
     text-decoration: none;
     font-family: 'Gotham Pro', sans-serif;
@@ -20,30 +21,38 @@
     line-height: 40px;
     text-align: center;
     background-color: #FF6600;
-    &:hover{
-      background-color:#FF9000;
+
+    &:hover {
+      background-color: #FF9000;
     }
   }
-  a{
-      display: block;
-      text-decoration: none;
-      span:first-child{
-        color: #666666;
-      }
-      span:last-child{
-        color: #333333;
-        font-size: 18px;
-      }
-      &.mail{
-        color: #0e569e;
-      }
+
+  a {
+    display: block;
+    text-decoration: none;
+
+    span:first-child {
+      color: #666666;
+    }
+
+    span:last-child {
+      color: #333333;
+      font-size: 18px;
+    }
+
+    &.mail {
+      color: #0e569e;
+    }
   }
-  .contacts{
+
+  .contacts {
     line-height: 28px;
   }
-  &-menu{
-    background-color:#0E569E;
-    >ul{
+
+  &-menu {
+    background-color: #0E569E;
+
+    >ul {
       max-width: 985px;
       width: 98%;
       margin: 0 auto;
@@ -53,11 +62,17 @@
       min-height: 60px;
       height: 60px;
       align-items: center;
+<<<<<<< HEAD
       position: relative;
       >li{
+=======
+
+      >li {
+>>>>>>> fb2c0736af83c5fcaf6e7ee4f111243cc5f8ff45
         height: 100%;
         flex-grow: 1;
-        >a{
+
+        >a {
           color: #fff;
           height: 100%;
           display: flex;
@@ -66,11 +81,14 @@
           text-align: center;
           width: 100%;
         }
-        &:hover,&.active{
-          >a{
+
+        &:hover,
+        &.active {
+          >a {
             background: #f60;
           }
         }
+<<<<<<< HEAD
         &.more{
           >a{
             position: relative;
@@ -86,8 +104,26 @@
               margin-left: -4.5px;
               bottom: 9px;
             }
+=======
+
+        &.more {
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 9px;
+            height: 6px;
+            background-image: url(../img/arow.png);
+            background-position: left center;
+            left: 50%;
+            margin-left: -4.5px;
+            bottom: 9px;
+>>>>>>> fb2c0736af83c5fcaf6e7ee4f111243cc5f8ff45
           }
-          ul{
+
+          ul {
             display: none;
             background: #ff6600;
             position: absolute;
@@ -139,30 +175,39 @@
     }
   }
 }
-@media screen and (max-width:880px){
-.header{
-  .inner2{
-    flex-direction: column;
-    >div{
-      margin: 5px auto;
-    }
-  }
-}
-a.mail{
-  text-align: center;
-}
-.header-menu{
-  padding: 20px 0px;
-  ul{
-    flex-direction: column;
-    .more{
-      &:after{
-        display: none;
+
+@media screen and (max-width:880px) {
+  .header {
+    .inner2 {
+      flex-direction: column;
+
+      >div {
+        margin: 5px auto;
       }
     }
-    li{
-      margin: 5px 0px;
+  }
+
+  a.mail {
+    text-align: center;
+  }
+
+  .header-menu {
+    padding: 20px 0px;
+
+    ul {
+     // height: unset;
+      flex-direction: column;
+
+      .more {
+        &:after {
+          display: none;
+        }
+      }
+
+      li {
+        margin: 5px 0px;
+      }
     }
   }
-}
+
 }

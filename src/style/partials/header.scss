@@ -53,6 +53,7 @@
       min-height: 60px;
       height: 60px;
       align-items: center;
+      position: relative;
       >li{
         height: 100%;
         flex-grow: 1;
@@ -71,21 +72,66 @@
           }
         }
         &.more{
-          position: relative;
-          &:after{
-            content:'';
-            position: absolute;
-            display: block;
-            width: 9px;
-            height: 6px;
-            background-image: url(../img/arow.png);
-            background-position: left center;
-            left: 50%;
-            margin-left: -4.5px;
-            bottom: 9px;
+          >a{
+            position: relative;
+            &:after{
+              content:'';
+              position: absolute;
+              display: block;
+              width: 9px;
+              height: 6px;
+              background-image: url(../img/arow.png);
+              background-position: left center;
+              left: 50%;
+              margin-left: -4.5px;
+              bottom: 9px;
+            }
           }
           ul{
             display: none;
+            background: #ff6600;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 10;
+            padding: 30px;
+            flex-wrap: wrap;
+            li{
+              margin-bottom: 13px;
+              position: relative;
+              padding-left: 15px;
+              width: 33.33%;
+              box-sizing: border-box;
+              padding-right: 3.5%;
+              &::before{
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                background: #ffffff;
+                position: absolute;
+                left: 0;
+                top: 7px;
+              }
+              a{
+                color: #0e569e;
+
+              }
+            }
+
+            &.cols-4{
+              li{
+
+              }
+            }
+          }
+          &:hover{
+            ul{
+              display: flex;
+            }
           }
         }
       }

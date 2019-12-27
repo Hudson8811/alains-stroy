@@ -62,13 +62,9 @@
       min-height: 60px;
       height: 60px;
       align-items: center;
-<<<<<<< HEAD
       position: relative;
       >li{
-=======
 
-      >li {
->>>>>>> fb2c0736af83c5fcaf6e7ee4f111243cc5f8ff45
         height: 100%;
         flex-grow: 1;
 
@@ -88,7 +84,7 @@
             background: #f60;
           }
         }
-<<<<<<< HEAD
+
         &.more{
           >a{
             position: relative;
@@ -104,74 +100,71 @@
               margin-left: -4.5px;
               bottom: 9px;
             }
-=======
-
-        &.more {
-          position: relative;
-
-          &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 9px;
-            height: 6px;
-            background-image: url(../img/arow.png);
-            background-position: left center;
-            left: 50%;
-            margin-left: -4.5px;
-            bottom: 9px;
->>>>>>> fb2c0736af83c5fcaf6e7ee4f111243cc5f8ff45
           }
 
           ul {
             display: none;
             background: #ff6600;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            width: 100%;
-            box-sizing: border-box;
-            z-index: 10;
-            padding: 30px;
-            flex-wrap: wrap;
-            li{
-              margin-bottom: 13px;
-              position: relative;
-              padding-left: 15px;
-              width: 33.33%;
-              box-sizing: border-box;
-              padding-right: 3.5%;
-              &::before{
-                content: "";
-                display: block;
-                width: 5px;
-                height: 5px;
-                border-radius: 100%;
-                background: #ffffff;
-                position: absolute;
-                left: 0;
-                top: 7px;
-              }
-              a{
-                color: #0e569e;
-
-              }
-            }
-
-            &.cols-4{
-              li{
-
-              }
-            }
-          }
-          &:hover{
-            ul{
-              display: flex;
-            }
           }
         }
       }
 
+    }
+  }
+}
+@media screen and (min-width:881px){
+  .header {
+    &-menu {
+      >ul {
+        >li{
+          &.more{
+            ul {
+              position: absolute;
+              left: 0;
+              top: 100%;
+              width: 100%;
+              box-sizing: border-box;
+              z-index: 10;
+              padding: 30px;
+              flex-wrap: wrap;
+              li{
+                margin-bottom: 13px;
+                position: relative;
+                padding-left: 15px;
+                width: 33.33%;
+                box-sizing: border-box;
+                padding-right: 3.5%;
+                &::before{
+                  content: "";
+                  display: block;
+                  width: 5px;
+                  height: 5px;
+                  border-radius: 100%;
+                  background: #ffffff;
+                  position: absolute;
+                  left: 0;
+                  top: 7px;
+                }
+                a{
+                  color: #0e569e;
+
+                }
+              }
+
+              &.cols-4{
+                li{
+                  width: 25%;
+                }
+              }
+            }
+            &:hover{
+              ul{
+                display: flex;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -192,22 +185,33 @@
   }
 
   .header-menu {
-    padding: 20px 0px;
+    padding: 15px 0;
+    margin-top: 15px;
 
-    ul {
-     // height: unset;
+    >ul {
       flex-direction: column;
+      height: auto;
 
-      .more {
-        &:after {
-          display: none;
-        }
-      }
-
-      li {
+      >li {
         margin: 5px 0px;
+        >a{
+          border-bottom: 1px solid transparent;
+        }
+        &.more {
+          >a{
+            &::after{
+             display: none;
+            }
+          }
+        }
+        &.active,
+        &:hover{
+          >a{
+            background: none;
+            border-bottom: 1px solid #f60;
+          }
+        }
       }
     }
   }
-
 }

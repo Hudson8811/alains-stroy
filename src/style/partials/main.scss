@@ -137,7 +137,8 @@ textarea {
   line-height: 40px;
   text-align: center;
   background-color: #FF6600;
-
+  border: none;
+  cursor: pointer;
   &:hover {
     background-color: #FF9000;
   }
@@ -168,7 +169,7 @@ textarea {
     position: absolute;
     left: 50%;
     margin-left: -20px;
-    top: -1px;
+    top: -2px;
     z-index: 1;
   }
 
@@ -382,15 +383,10 @@ textarea {
         li {
           margin-top: 26px;
           position: relative;
-<<<<<<< HEAD
+
           letter-spacing: -0.2px;
           &:before{
             content:'';
-=======
-
-          &:before {
-            content: '';
->>>>>>> fb2c0736af83c5fcaf6e7ee4f111243cc5f8ff45
             display: block;
             position: absolute;
             width: 5px;

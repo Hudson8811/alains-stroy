@@ -215,3 +215,11 @@
     }
   }
 }
+
+@media screen and (max-width:880px){
+  .header-menu>ul>li.active ul{
+    display: block;
+    padding: 20px;
+    margin-top:5px;
+  }
+}

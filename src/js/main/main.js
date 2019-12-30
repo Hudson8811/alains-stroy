@@ -2,24 +2,28 @@ $(document).ready(function() {
     if ($('.slider-global').length){
         $('.slider-global__inner').owlCarousel({
             loop: true,
-            autoplay: false,
             margin: 0,
             nav: true,
             navText: false,
             dots: true,
             items: 1,
+            autoplay: true,
+            autoplayTimeout:5000,
+            smartSpeed: 1000
         });
     }
 
     if ($('.slider-preview').length){
         $('.slider-preview').owlCarousel({
             loop: true,
-            autoplay: false,
             margin: 30,
             nav: true,
             navText: false,
             dots: false,
             items: 4,
+            autoplay: true,
+            autoplayTimeout:5000,
+            smartSpeed: 1000,
             responsive : {
                 0 : {
                     items: 1,
@@ -57,4 +61,20 @@ $(document).ready(function() {
         });
     });
 
+});
+
+
+
+$('.questions form').on('click', '.button button', function(){
+    $('.questions form input:not([type=button])').removeClass('error');
+    let hasErrors = false;
+
+    $('.questions form input:not([type=button])').each(function(){
+        if ($(this).val().trim() == '') {
+          hasErrors = true;
+          $(this).addClass('error');
+        }
+    });
+
+    return hasErrors ? false : true; // тут отправка формы либо вернуть false
 });

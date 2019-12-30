@@ -8,6 +8,8 @@ $('.slider-news').owlCarousel({
     items: 1,
     onInitialized  : counter,
     onTranslated : counter,
+    autoplayTimeout:5000,
+    smartSpeed: 1000
 });
 
 function counter(event) {

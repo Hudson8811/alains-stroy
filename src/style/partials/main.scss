@@ -139,6 +139,7 @@ textarea {
   background-color: #FF6600;
   border: none;
   cursor: pointer;
+
   &:hover {
     background-color: #FF9000;
   }
@@ -273,6 +274,16 @@ textarea {
       &:focus {
         background-color: #4185C9;
       }
+
+
+      &.error {
+        border: 1px solid red;
+        box-shadow: none;
+
+        &:not(:invalid) {
+          border: none;
+        }
+      }
     }
   }
 }
@@ -385,8 +396,9 @@ textarea {
           position: relative;
 
           letter-spacing: -0.2px;
-          &:before{
-            content:'';
+
+          &:before {
+            content: '';
             display: block;
             position: absolute;
             width: 5px;
@@ -560,6 +572,7 @@ textarea {
 
 .top-arrow {
   position: relative;
+
   &::before {
     content: '';
     width: 40px;
@@ -584,6 +597,7 @@ textarea {
 
 .bottom-arrow {
   position: relative;
+
   &::after {
     content: '';
     width: 40px;

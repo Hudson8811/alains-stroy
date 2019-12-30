@@ -288,29 +288,29 @@
                         <img src="img/pix4.png" alt="">
                         <div class="page-form-block__title">Ремонт ванной комнаты</div>
                     </div>
-                    <div class="page-form-block__price">Стоимость работ: <span>23 700 Р</span></div>
+                    <div class="page-form-block__price" data-default-price="23700">Стоимость работ: <span>23 700 Р</span></div>
                     <div class="page-form-block__content">
                         <h3 class="page-form-block__options-title">Дополнительные услуги:</h3>
                         <div class="page-form-block__options">
-                            <div class="page-form-block__option">
+                            <div class="page-form-block__option" data-price="324">
                                 <label class="checkbox">
                                     <input type="checkbox" name="option[]" value="Установка унитаза">
                                     <span>Установка унитаза</span>
                                 </label>
                             </div>
-                            <div class="page-form-block__option">
+                            <div class="page-form-block__option" data-price="4567">
                                 <label class="checkbox">
                                     <input type="checkbox" name="option[]" value="Установка смесителя">
                                     <span>Установка смесителя</span>
                                 </label>
                             </div>
-                            <div class="page-form-block__option">
+                            <div class="page-form-block__option" data-price="346">
                                 <label class="checkbox">
                                     <input type="checkbox" name="option[]" value="Заливка стяжки пола, установка раковины">
                                     <span>Заливка стяжки пола, установка раковины</span>
                                 </label>
                             </div>
-                            <div class="page-form-block__option">
+                            <div class="page-form-block__option" data-price="346">
                                 <label class="checkbox">
                                     <input type="checkbox" name="option[]" value="Комплексный ремонт оборудования ванной комнаты">
                                     <span>Комплексный ремонт оборудования ванной комнаты</span>
@@ -339,10 +339,10 @@
                         </div>
                         <div class="flex">
                             <div class="fon">
-                                <input type="text" placeholder="Телефон или e-mail" class="inputbox">
+                                <input type="text" placeholder="Телефон или e-mail" class="inputbox" required>
                             </div>
                             <div class="name">
-                                <input type="text" placeholder="Имя" class="inputbox">
+                                <input type="text" placeholder="Имя" class="inputbox" required>
                             </div>
                             <div class="button">
                                 <button>Отправить заявку</button>
@@ -360,5 +360,6 @@
 <script src="js/libs/owl.carousel.js"></script>
 <script src="js/libs/jquery.fancybox.min.js"></script>
 <script src="js/main/main.js"></script>
+<script src="js/pages/global.js"></script>
 
 </html>

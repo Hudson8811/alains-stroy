@@ -76,7 +76,11 @@ $('.questions form').on('click', '.button button', function () {
         }
     });
 
-    return hasErrors ? false : true; // тут отправка формы либо вернуть false
+
+    if (hasErrors === false) {
+        $(this).closest('form').submit();
+    }
+    return hasErrors ? false : true;
 });
 
 

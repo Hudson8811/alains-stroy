@@ -400,9 +400,9 @@
                         <div class="item">
                             <div class="icon"></div>
                             <p>Приезжайте:</p>
-                            <span>Киевское шоссе,
-                                22-й километр,
-                                дв4с1кА, офис 410</span>
+                            <span>Москва ленинградский проспект дом 26 корп. 1
+
+                            </span>
                         </div>
                         <div class="item">
                             <div class="icon"></div>
@@ -421,13 +421,12 @@
                                 Без выходных!</span>
                         </div>
                     </div>
-                    <div class="map-block">
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CGto5T6M" width="100%" height="100%"
-                            frameborder="0" allowfullscreen="true"></iframe>
+                    <div class="map-block" id="yamap">
+
                     </div>
                 </div>
             </div>
-            <div class="form-block">
+            <div class="form-block validate-form">
                 <div class="inner">
                     <div class="name">
                         <span>ВЫ МОЖЕТЕ ОСТАВИТЬ НАМ СООБЩЕНИЕ</span>
@@ -436,16 +435,16 @@
                     <div class="flex">
                         <form>
                             <div>
-                                <input type="text" placeholder="Телефон или e-mail" class="inputbox">
+                                <input type="text" placeholder="Телефон или e-mail" class="inputbox" required>
                             </div>
                             <div>
-                                <input type="text" placeholder="Ваше имя" class="inputbox">
+                                <input type="text" placeholder="Ваше имя" class="inputbox" required>
                             </div>
                             <div>
-                                <textarea placeholder="Ваше сообщение" class="inputbox"></textarea>
+                                <textarea placeholder="Ваше сообщение" class="inputbox" required></textarea>
                             </div>
                         </form>
-                        <a href="#" class="button">Отправить сообщение</a>
+                        <button  class="button">Отправить сообщение</button>
                     </div>
                 </div>
             </div>
@@ -458,5 +457,47 @@
 <script src="js/libs/jquery.fancybox.min.js"></script>
 <script src="js/pages/index-page.js"></script>
 <script src="js/main/main.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=e99e43da-133c-41f7-b646-ca6ac843d89e&lang=ru_RU"
+    type="text/javascript"></script>
+<script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init() {
+        // Создание карты.
+
+        var myMap = new ymaps.Map('yamap', {
+            center: [55.783311, 37.572935],
+            zoom: 15
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                //  hintContent: 'Собственный значок метки',
+                //    balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/baloon.png',
+                // Размеры метки.
+                iconImageSize: [46, 66],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-23, -66]
+            });
+
+        myMap.geoObjects
+            .add(myPlacemark);
+
+
+    }
+</script>
 
 </html>

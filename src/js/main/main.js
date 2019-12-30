@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    if ($('.slider-global').length){
+$(document).ready(function () {
+    if ($('.slider-global').length) {
         $('.slider-global__inner').owlCarousel({
             loop: true,
             margin: 0,
@@ -8,12 +8,12 @@ $(document).ready(function() {
             dots: true,
             items: 1,
             autoplay: true,
-            autoplayTimeout:5000,
+            autoplayTimeout: 5000,
             smartSpeed: 1000
         });
     }
 
-    if ($('.slider-preview').length){
+    if ($('.slider-preview').length) {
         $('.slider-preview').owlCarousel({
             loop: true,
             margin: 30,
@@ -22,19 +22,19 @@ $(document).ready(function() {
             dots: false,
             items: 4,
             autoplay: true,
-            autoplayTimeout:5000,
+            autoplayTimeout: 5000,
             smartSpeed: 1000,
-            responsive : {
-                0 : {
+            responsive: {
+                0: {
                     items: 1,
                 },
-                480 : {
+                480: {
                     items: 2
                 },
-                768 : {
+                768: {
                     items: 3,
                 },
-                1000 : {
+                1000: {
                     items: 4,
                 }
             }
@@ -50,7 +50,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#contact-modal form').on('submit',function (e) {
+    $('#contact-modal form').on('submit', function (e) {
         e.preventDefault();
         //функция отправки ajax
         $(this).trigger("reset");
@@ -65,16 +65,35 @@ $(document).ready(function() {
 
 
 
-$('.questions form').on('click', '.button button', function(){
+$('.questions form').on('click', '.button button', function () {
     $('.questions form input:not([type=button])').removeClass('error');
     let hasErrors = false;
 
-    $('.questions form input:not([type=button])').each(function(){
+    $('.questions form input:not([type=button])').each(function () {
         if ($(this).val().trim() == '') {
-          hasErrors = true;
-          $(this).addClass('error');
+            hasErrors = true;
+            $(this).addClass('error');
         }
     });
 
     return hasErrors ? false : true; // тут отправка формы либо вернуть false
+});
+
+
+$('.validate-form').on('click', 'button', function () {
+    $('.validate-form input:not([type=button]), .validate-form textarea').removeClass('error');
+    let hasErrors = false;
+
+    $('.validate-form input:not([type=button]), .validate-form textarea').each(function () {
+        if ($(this).val().trim() == '') {
+            hasErrors = true;
+            $(this).addClass('error');
+        }
+    });
+
+
+    if (hasErrors === false) {
+        $(this).siblings('form').submit();
+    }
+    return hasErrors ? false : true;
 });

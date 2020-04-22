@@ -335,6 +335,9 @@ textarea {
       width: calc((100% - 82px)/3);
       margin-bottom: 41px;
 
+      display: flex;
+      flex-direction: column;
+
       &:nth-child(1) {
         p {
           padding-bottom: 43px;
@@ -391,7 +394,7 @@ textarea {
 
       ul {
         padding-left: 16px;
-
+        flex-grow: 1;
         li {
           margin-top: 26px;
           position: relative;
